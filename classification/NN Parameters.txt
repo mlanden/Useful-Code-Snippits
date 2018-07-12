@@ -1,1 +1,3 @@
 Optimizer: Adam or Stochastic Gradient Descent 
+
+Adam: Good default settings for the tested machine learning problems are alpha=0.001, beta1=0.9, beta2=0.999 and epsilon=10−8
