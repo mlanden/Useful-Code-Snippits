@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def vectorize_data(data, dimension = 10000):
     vectors = np.zeros((len(data), dimension))
