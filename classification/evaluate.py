@@ -50,7 +50,7 @@ def cross_validation(train_data, test_data, n_folds, build_model,
                   epochs = epochs,
                   batch_size = batch_size,
                   validation_data = (val_x, val_y))
-        histories.append(history)
+        histories.append(history.history)
 
     model = build_model()
     model.fit(train_x,
