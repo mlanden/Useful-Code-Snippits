@@ -25,7 +25,9 @@ def held_out_evaluation(train_data, test_data, build_model,
     test_x, test_y = test_data
     test_model = build_model()
     results = model.evaluate(test_x, test_y)
-    print(results)
+    print()
+    print("validation acc:", results[1])
+    return history
 
 def cross_validation(train_data, test_data, n_folds, build_model, 
     num_validation_samples, epochs, batch_size):
